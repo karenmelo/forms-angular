@@ -4,5 +4,5 @@ export class Usuario {
   cfp: string;
   email: string;
   senha: string;
-  senhaConfirmacao: string;
+  confirmeSenha: string;
 }
