@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app.routes';
 import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produto-dashboard/produto-dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, SobreComponent, CadastroComponent, ProdutoDashboardComponent],
+  declarations: [AppComponent, SobreComponent, CadastroComponent],
   imports: [
     BrowserModule,
     FormsModule,
