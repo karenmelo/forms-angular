@@ -10,9 +10,10 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
+import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produto-dashboard/produto-dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, SobreComponent, CadastroComponent],
+  declarations: [AppComponent, SobreComponent, CadastroComponent, ProdutoDashboardComponent],
   imports: [
     BrowserModule,
     FormsModule,
