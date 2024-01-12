@@ -10,7 +10,7 @@ export class ProdutoService {
     this.produtos = [
       {
         id: 1,
-        nome: 'Teste',
+        nome: 'Teste 1',
         ativo: true,
         valor: 100,
         imagem: 'celular.jpg',
@@ -24,29 +24,29 @@ export class ProdutoService {
       },
       {
         id: 3,
-        nome: 'Teste',
+        nome: 'Teste 3',
         ativo: true,
         valor: 300,
         imagem: 'laptop.jpg',
       },
       {
         id: 4,
-        nome: 'Teste',
+        nome: 'Teste 4',
         ativo: true,
         valor: 400,
         imagem: 'mouse.jpg',
       },
       {
         id: 5,
-        nome: 'Teste',
+        nome: 'Teste 5',
         ativo: true,
         valor: 500,
         imagem: 'teclado.jpg',
       },
       {
         id: 6,
-        nome: 'Teste',
-        ativo: true,
+        nome: 'Teste 6',
+        ativo: false,
         valor: 600,
         imagem: 'headset.jpg',
       },
