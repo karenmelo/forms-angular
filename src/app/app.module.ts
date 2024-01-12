@@ -11,9 +11,16 @@ import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
 import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produto-dashboard/produto-dashboard.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { AuthGuard } from './services/app.guard';
 
 @NgModule({
-  declarations: [AppComponent, SobreComponent, CadastroComponent],
+  declarations: [
+    AppComponent,
+    SobreComponent,
+    CadastroComponent,
+    AdminDashboardComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -21,7 +28,7 @@ import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produ
     NavegacaoModule,
     AppRoutingModule,
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }, AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
