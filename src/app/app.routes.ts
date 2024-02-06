@@ -6,12 +6,17 @@ import { NgModule } from '@angular/core';
 import { NotFoundComponent } from './navegacao/not-found/not-found.component';
 import { ProdutoDetalheComponent } from './demos/arquitetura-componentes/componentes/produto-card-detalhe.component';
 import { AuthGuard } from './services/app.guard';
+import { CadastroGuard } from './services/cadastro.guard';
 
 const rootRouterConfig: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'sobre', component: SobreComponent },
-  { path: 'cadastro', component: CadastroComponent, canDeactivate: [] },
+  {
+    path: 'cadastro',
+    component: CadastroComponent,
+    canDeactivate: [CadastroGuard],
+  },
   {
     path: 'produtos',
     loadChildren: () =>

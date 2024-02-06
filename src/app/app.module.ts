@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app.routes';
 import { ProdutoDashboardComponent } from './demos/arquitetura-componentes/produto-dashboard/produto-dashboard.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { AuthGuard } from './services/app.guard';
+import { CadastroGuard } from './services/cadastro.guard';
+import { FilmesComponent } from './pipes/filmes/filmes.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { AuthGuard } from './services/app.guard';
     SobreComponent,
     CadastroComponent,
     AdminDashboardComponent,
+    FilmesComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,11 @@ import { AuthGuard } from './services/app.guard';
     NavegacaoModule,
     AppRoutingModule,
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }, AuthGuard],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    AuthGuard,
+    CadastroGuard,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
