@@ -14,7 +14,7 @@
     </thead>
     <tbody>
       <tr *ngFor='let filme of mapped'>
-        <img [src]="filme.imagem" style="padding-bottom: 5px;" image-alt="">
+        <img [src]="filme.imagem" style="padding-bottom: 5px;" image-alt="imagem">
         <td>{{ filme.nome | titlecase }}</td>
         <td>{{ filme.dataLancamento | date:"dd/MM/yyyy" }}</td>
         <td>{{ filme.valor | currency:'BRL':'symbol':'1.2-2':'pt'}}</td>

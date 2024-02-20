@@ -3,5 +3,5 @@ export interface Filme {
   dataLancamento: Date;
   valor: number;
   imagem: string;
-  tamanho: string;
+  tamanho: number;
 }
