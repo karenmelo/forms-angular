@@ -13,12 +13,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor='let filme of mapped'>
-        <img [src]="filme.imagem" style="padding-bottom: 5px;" image-alt="imagem">
-        <td>{{ filme.nome | titlecase }}</td>
-        <td>{{ filme.dataLancamento | date:"dd/MM/yyyy" }}</td>
-        <td>{{ filme.valor | currency:'BRL':'symbol':'1.2-2':'pt'}}</td>
-        <td>{{ filme.tamanho | filesize }}</td>
+      <tr *ngFor="let filme of mapped;">
+        <img [src]="filme.imagem" image-alt="imagem">
+        <td>{{ filme.nome }}</td>
+        <td>{{ filme.dataLancamento | date:"dd/MM/yy"}}</td>
+        <td>{{ filme.valor }}</td>
+        <td>{{ filme.tamanho }}</td>
       </tr>
     </tbody>
   </table>

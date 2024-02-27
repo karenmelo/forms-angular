@@ -11,15 +11,16 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { Usuario } from './models/usuario';
+import { Observable, fromEvent, merge } from 'rxjs';
 import {
   DisplayMessage,
   GenericValidator,
   ValidationMessages,
 } from './generic-form-validation';
-import { Observable, fromEvent, merge } from 'rxjs';
+import { Usuario } from './models/usuario';
 
 @Component({
+  standalone: true,
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
 })

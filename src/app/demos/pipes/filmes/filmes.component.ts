@@ -14,9 +14,8 @@ import { ImageFormaterPipe } from './image.pipe';
 export class FilmesComponent implements OnInit {
   filmes: Filme[];
   mapped: Filme[];
-
   constructor(private imageFormat: ImageFormaterPipe) {}
-  ngOnInit(): void {
+  ngOnInit() {
     this.filmes = [
       {
         nome: 'Um Sonho de Liberdade',
@@ -54,15 +53,18 @@ export class FilmesComponent implements OnInit {
         tamanho: '773039680',
       },
     ];
-
     this.mapped = this.filmes.map((filme) => {
-      return {
+      var result = {
         nome: filme.nome,
         dataLancamento: filme.dataLancamento,
         valor: filme.valor,
         tamanho: filme.tamanho,
         imagem: this.imageFormat.transform(filme.imagem, 'default', true),
       };
+
+      return result;
     });
+
+    console.log(this.mapped);
   }
 }
