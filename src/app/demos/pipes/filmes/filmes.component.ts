@@ -49,22 +49,18 @@ export class FilmesComponent implements OnInit {
         nome: 'Pulp Fiction: Tempo de Violência ',
         dataLancamento: new Date('01/08/1994'),
         valor: 190.0,
-        imagem: 'PulpFiction.jpg',
+        imagem: '',
         tamanho: 773039680,
       },
     ];
     this.mapped = this.filmes.map((filme) => {
-      var result = {
+      return {
         nome: filme.nome,
         dataLancamento: filme.dataLancamento,
         valor: filme.valor,
         tamanho: filme.tamanho,
         imagem: this.imageFormat.transform(filme.imagem, 'default', true),
       };
-
-      return result;
     });
-
-    console.log(this.mapped);
   }
 }

@@ -8,7 +8,6 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { NavegacaoModule } from './navegacao/navegacao.module';
 
 import { AppRoutingModule } from './app.routes';
-import { ImageFormaterPipe } from './demos/pipes/filmes/image.pipe';
 
 import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
@@ -17,7 +16,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 @NgModule({
-  declarations: [AppComponent, SobreComponent, ImageFormaterPipe],
+  declarations: [AppComponent, SobreComponent],
   imports: [
     BrowserModule,
     FormsModule,
