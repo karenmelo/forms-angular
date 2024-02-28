@@ -11,6 +11,7 @@ export class MenuComponent {
     { link: '/sobre', name: 'Sobre', exact: true, admin: false },
     { link: '/produtos', name: 'Produtos', exact: false, admin: false },
     { link: '/filmes', name: 'Filmes', exact: false, admin: false },
+    { link: '/bar', name: 'Bar', exact: false, admin: false },
     { link: '/admin', name: 'Admin', exact: false, admin: true },
   ];
 }

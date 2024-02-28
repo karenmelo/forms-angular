@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -23,6 +24,7 @@ import { Usuario } from './models/usuario';
   standalone: true,
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
+  imports: [CommonModule],
 })
 export class CadastroComponent implements OnInit, AfterViewInit {
   @ViewChildren(FormControlName, { read: ElementRef })

@@ -8,6 +8,7 @@ import { ImageFormaterPipe } from './image.pipe';
   standalone: true,
   selector: 'app-filmes',
   templateUrl: './filmes.component.html',
+  styleUrls: ['./filmes.component.css'],
   providers: [ImageFormaterPipe],
   imports: [CommonModule, FileSizePipe],
 })

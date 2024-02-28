@@ -5,6 +5,7 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { NotFoundComponent } from './navegacao/not-found/not-found.component';
 
+import { BarComponent } from './demos/bar-di-zones/bar.component';
 import { FilmesComponent } from './demos/pipes/filmes/filmes.component';
 import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
@@ -14,6 +15,7 @@ const rootRouterConfig: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'filmes', component: FilmesComponent },
+  { path: 'bar', component: BarComponent },
   {
     path: 'cadastro',
     component: CadastroComponent,

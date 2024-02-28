@@ -7,7 +7,7 @@
         <label class="col-md-2 control-label" for="nome">Nome completo:</label>
         <div class="col-md-10">
           <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)" formControlName="nome" ngClass="{ 'is-invalid': displayMessage['nome'] }">
-          <span class="text-danger" *ngIf="displayMessage['nome']">
+          <span class="text-danger" *NgIf="displayMessage['nome']">
             <p [innerHTML]="displayMessage['nome']"></p>
           </span>
         </div>
@@ -16,7 +16,7 @@
         <label class="col-md-2 control-label" for="cpf">CPF</label>
         <div class="col-md-10">
           <input class="form-control" id="cpf" type="text" placeholder="CPF (requerido)" formControlName="cpf" ngClass="{ 'is-invalid': displayMessage['cpf'] }">
-          <span class="text-danger" *ngIf="displayMessage['cpf']">
+          <span class="text-danger" *NgIf="displayMessage['cpf']">
             <p [innerHTML]="displayMessage['cpf']"></p>
           </span>
         </div>
@@ -25,7 +25,7 @@
         <label class="col-md-2 control-label" for="email">E-mail:</label>
         <div class="col-md-10">
           <input class="form-control" id="email" type="text" placeholder="E-mail (requerido)" formControlName="email" ngClass="{'is-invalid': displayMessage['email']}">
-          <span class="text-danger" *ngIf="displayMessage['email']">
+          <span class="text-danger" *NgIf="displayMessage['email']">
             <p [innerHTML]="displayMessage['email']"></p>
           </span>
         </div>
@@ -34,7 +34,7 @@
         <label class="col-md-2 control-label" for="senha">Senha:</label>
         <div class="col-md-10">
           <input class="form-control" id="senha" type="password" placeholder="Senha (requerido)" formControlName="senha" ngClass="{'is-invalid': displayMessage['senha']}">
-          <span class="text-danger" *ngIf="displayMessage['senha']">
+          <span class="text-danger" *NgIf="displayMessage['senha']">
             <p [innerHTML]="displayMessage['senha']"></p>
           </span>
         </div>
@@ -43,7 +43,7 @@
         <label class="col-md-2 control-label" for="confirmeSenha">Confirme a senha:</label>
         <div class="col-md-10">
           <input class="form-control" id="confirmeSenha" type="password" placeholder="Confirme a senha (requerido)" formControlName="confirmeSenha" ngClass="{'is-invalid': displayMessage['confirmeSenha']}">
-          <span class="text-danger" *ngIf="displayMessage['confirmeSenha']">
+          <span class="text-danger" *NgIf="displayMessage['confirmeSenha']">
             <p [innerHTML]="displayMessage['confirmeSenha']"></p>
           </span>
         </div>
