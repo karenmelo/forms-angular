@@ -13,6 +13,7 @@ import { AuthGuard } from './services/app.guard';
 import { CadastroGuard } from './services/cadastro.guard';
 
 import { registerLocaleData } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt);
 @NgModule({
@@ -23,6 +24,7 @@ registerLocaleData(localePt);
     ReactiveFormsModule,
     NavegacaoModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },
